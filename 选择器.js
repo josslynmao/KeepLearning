@@ -15,3 +15,6 @@ $("div:odd").css("background","#FFF7BD");
 $("div:eq(3)").css("background","#FF7D99");
 $("div:gt(4)").css("background","#FF186F");
 $("div:lt(2)").css("background","#FF186F");
+$(":header").css("background","#bbffaa");
+$(":animated").css("background","#bbffaa");
+$(":focus").css("background","#bbffaa");
