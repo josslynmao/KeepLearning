@@ -32,3 +32,5 @@ $("div[title$=te]").css("background","yellow");
 $("div[title$=est]").css("background","yellow");
 $("div[title*=es]").css("background","red");
 $("div[id][title=test]").css("background","yellow");
+$("div.one:nth-child(2)").css("background","green");
+$("div.one:first-child").css("background","grey");
