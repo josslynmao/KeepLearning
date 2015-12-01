@@ -10,14 +10,14 @@ ul{
 
 a{
 	text-decoration: none;
-	color: black;
+	color: #FD6CA3;
 }
 
 .choose{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #EBEBEB;
+	background-color: #E2E2E2;
 	padding: 10px;
 	margin: 20px;
 }
