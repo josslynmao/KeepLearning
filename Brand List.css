@@ -1,0 +1,32 @@
+ul{
+	list-style: none;
+	color: black;
+	-webkit-column-count: 3;
+	-webkit-column-direction: row;
+	width: 70%;
+	text-align: center;
+	padding: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.choose{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #EBEBEB;
+	padding: 10px;
+	margin: 20px;
+}
+
+.showmore{
+	width: 6em;
+	border: 2px solid grey;
+	border-radius: 5px;
+	padding: 5px 10px 5px 10px;
+	text-align: center;
+	box-shadow: 2px 2px 2px grey;
+}
