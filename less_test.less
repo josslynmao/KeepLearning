@@ -1,0 +1,11 @@
+.triangle_less(top,@width:100px,@color:#ccc){
+	height: 0px;
+	width: 0px;
+	border-width: @width;
+	border-color: transparent transparent @color transparent;
+	border-style: dashed dashed solid dashed;
+}
+
+.triangle{
+	.triangle_less(top);
+}
