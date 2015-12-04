@@ -1,4 +1,5 @@
-.triangle_less(top,@width:100px,@color:#ccc){
+.triangle_less(top,@width:100px,@color:#ccc,@margin:10px){
+	margin: @margin;
 	height: 0px;
 	width: 0px;
 	border-width: @width;
@@ -6,6 +7,45 @@
 	border-style: dashed dashed solid dashed;
 }
 
-.triangle{
+.triangle_less(bottom,@width:100px,@color:#ccc,@margin:10px){
+	margin: @margin;
+	height: 0px;
+	width: 0px;
+	border-width: @width;
+	border-color:  @color transparent transparent transparent;
+	border-style: solid dashed dashed dashed;
+}
+
+.triangle_less(left,@width:100px,@color:#ccc,@margin:10px){
+	margin: @margin;
+	height: 0px;
+	width: 0px;
+	border-width: @width;
+	border-color: transparent @color transparent transparent;
+	border-style: dashed solid dashed dashed;
+}
+
+.triangle_less(right,@width:100px,@color:#ccc,@margin:10px){
+	margin: @margin;
+	height: 0px;
+	width: 0px;
+	border-width: @width;
+	border-color: transparent transparent transparent @color ;
+	border-style: dashed dashed dashed solid;
+}
+
+.triangle1{
 	.triangle_less(top);
+}
+
+.triangle2{
+	.triangle_less(bottom);
+}
+
+.triangle3{
+	.triangle_less(left);
+}
+
+.triangle4{
+	.triangle_less(right);
 }
