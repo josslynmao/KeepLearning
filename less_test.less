@@ -1,37 +1,32 @@
-.triangle_less(top,@width:100px,@color:#ccc,@margin:10px){
-	margin: @margin;
-	height: 0px;
-	width: 0px;
+.triangle_less(top,@width:100px,@color:#ccc){
 	border-width: @width;
 	border-color: transparent transparent @color transparent;
 	border-style: dashed dashed solid dashed;
 }
 
-.triangle_less(bottom,@width:100px,@color:#ccc,@margin:10px){
-	margin: @margin;
-	height: 0px;
-	width: 0px;
+.triangle_less(bottom,@width:100px,@color:#ccc){
 	border-width: @width;
 	border-color:  @color transparent transparent transparent;
 	border-style: solid dashed dashed dashed;
 }
 
-.triangle_less(left,@width:100px,@color:#ccc,@margin:10px){
-	margin: @margin;
-	height: 0px;
-	width: 0px;
+.triangle_less(left,@width:100px,@color:#ccc){
 	border-width: @width;
 	border-color: transparent @color transparent transparent;
 	border-style: dashed solid dashed dashed;
 }
 
-.triangle_less(right,@width:100px,@color:#ccc,@margin:10px){
-	margin: @margin;
-	height: 0px;
-	width: 0px;
+.triangle_less(right,@width:100px,@color:#ccc){
 	border-width: @width;
 	border-color: transparent transparent transparent @color ;
 	border-style: dashed dashed dashed solid;
+}
+
+.triangle_less(@_,@width:100px,@color:#ccc){
+	width: 0px;
+	height: 0px;
+	margin: 5px;
+	overflow: hidden;
 }
 
 .triangle1{
