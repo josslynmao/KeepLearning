@@ -27,6 +27,10 @@ $li.appendTo("ul");*/
 var $li = $("ul li:eq(1)").detach();
 $li.appendTo("ul");*/
 
-//empty
-var $li = $("ul li:eq(0)").empty();
-$li.appendTo("ul");
+//empty()
+/*var $li = $("ul li:eq(0)").empty();*/
+
+//clone()
+/*$("ul li").click(function(){
+	$(this).clone(true).appendTo("ul");
+});*/
