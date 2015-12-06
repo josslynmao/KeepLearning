@@ -34,3 +34,9 @@ $li.appendTo("ul");*/
 /*$("ul li").click(function(){
 	$(this).clone(true).appendTo("ul");
 });*/
+
+//replaceWith()
+/*$("ul li:eq(2)").replaceWith("<li>replaceWith</li>");*/
+
+//wrap()
+$("p").wrapAll("<strong></strong>");
