@@ -39,4 +39,11 @@ $li.appendTo("ul");*/
 /*$("ul li:eq(2)").replaceWith("<li>replaceWith</li>");*/
 
 //wrap()
-$("p").wrapAll("<strong></strong>");
+//$("p").wrapAll("<strong></strong>");
+$("p").wrapInner("<strong></strong>");
+
+//attr()
+var $para = $("p");
+$para.attr("title","fruit");
+alert($para.attr("title"));
+$para.removeAttr("title");
