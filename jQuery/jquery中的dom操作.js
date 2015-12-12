@@ -47,3 +47,6 @@ var $para = $("p");
 $para.attr("title","fruit");
 alert($para.attr("title"));
 $para.removeAttr("title");
+
+var p_class = $("p").attr("class");
+$("p").attr("class","high");
