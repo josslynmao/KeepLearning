@@ -40,13 +40,15 @@ $li.appendTo("ul");*/
 
 //wrap()
 //$("p").wrapAll("<strong></strong>");
-$("p").wrapInner("<strong></strong>");
+//$("p").wrapInner("<strong></strong>");
 
 //attr()
-var $para = $("p");
-$para.attr("title","fruit");
-alert($para.attr("title"));
-$para.removeAttr("title");
+//var $para = $("p");
+//$para.attr("title","fruit");
+//alert($para.attr("title"));
+//$para.removeAttr("title");
 
-var p_class = $("p").attr("class");
-$("p").attr("class","high");
+//var p_class = $("p").attr("class");
+//$("p").attr("class","high");
+
+//$('p').addClass('another');
