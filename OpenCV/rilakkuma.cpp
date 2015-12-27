@@ -16,13 +16,14 @@ using namespace cv;
 
 int main( )
 {
-    /*IplImage* img = cvLoadImage("/Users/apple/Desktop/rilakkuma.jpg",1);
+    IplImage* img = cvLoadImage("/Users/apple/Desktop/rilakkuma.jpg",1);
     cvNamedWindow("rilakkuma",1);
     cvShowImage("rilakkuma",img);
     cvWaitKey(0);
     cvReleaseImage(&img);
     cvDestroyWindow("rilakkuma");
-    return 0;*/
+ 
+    
     float data[18] =
     {30,65,53,54,45,34,
      22,43,54,44,22,33,
@@ -43,6 +44,20 @@ int main( )
         for (int x=0; x<mat.cols; x++) {
             CvScalar value = cvGet2D(&mat, y, x);
             printf("<%f %f >",value.val[0],value.val[1]);
+        }
+        printf("\n");
+    }
+    
+    //顺序存储，直接访问
+    int nChannels = 1;
+    cvInitMatHeader(&mat, 3, 6, CV_32FC1,data);
+    for (int y=0; y<mat.rows; y++) {
+        float* ptr = (float*)(mat.data.ptr+ y * mat.step);
+        for (int x=0; x<mat.cols; x++) {
+            
+            float value[1];
+            value[0] = *(ptr+x*nChannels);
+            printf("%f  ",value[0]);
         }
         printf("\n");
     }
